@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Attha's Restaurant Brand Colors */
+:root {
+  --primary: #000000;
+  --gold: #FDCB20;
+  --white: #FFFFFF;
+  --warmgray: #F2F2F2;
+  --olive: #4B5320;
+  --maroon: #800000;
+}
+
+@theme inline {
+  /* Brand Colors */
+  --color-primary: var(--primary);
+  --color-gold: var(--gold);
+  --color-white: var(--white);
+  --color-warmgray: var(--warmgray);
+  --color-olive: var(--olive);
+  --color-maroon: var(--maroon);
+  
+  /* Font Families - Luxury restaurant serif + sans pairing */
+  --font-serif: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  
+  /* Spacing and layout */
+  --spacing-section: 6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--white);
+  color: var(--primary);
+  line-height: 1.6;
+}
